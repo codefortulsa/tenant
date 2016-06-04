@@ -56,6 +56,7 @@
           $('#position-button').click(function(){
             navigator.geolocation.getCurrentPosition(function(position){
               $('#position-input').val(position.coords.latitude + ", " + position.coords.longitude);
+              $('#position-span').text(position.coords.latitude + ", " + position.coords.longitude);
             });
           });
         }
